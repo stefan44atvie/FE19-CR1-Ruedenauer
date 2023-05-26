@@ -35,7 +35,8 @@
 
 footer {
   margin-top: 5px;
-  margin-bottom: 10px;
+  padding-bottom: 5px;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
   background-color: black;
@@ -138,6 +139,21 @@ footer .footer1 {
 }
 .container1 .cooking {
   width: 40%;
+}
+
+.about {
+  height: 750px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.about .about_title {
+  text-align: center;
+}
+
+.about_footer {
+  display: flex;
+  bottom: 0;
+  background-color: black;
 }
 
 @media screen and (width < 834px) {

@@ -1,7 +1,7 @@
 .nav1{
     display:flex;
     justify-content: space-between;
-    background-color: azure;
+    background-color:azure;
     // border-bottom: 1px solid red;
 
     img{
@@ -37,7 +37,8 @@ justify-items:stretch;
 }
 footer{
     margin-top:5px;
-    margin-bottom:10px;
+    padding-bottom:5px;
+    width:100%;
     align-items: center;
     justify-content: space-around;
     background-color: black;
@@ -148,6 +149,19 @@ footer{
     .cooking{
         width:40%;
     }
+}
+.about{
+    height:750px;
+    padding-left:10px;
+    padding-right:10px;
+    .about_title{
+        text-align: center;
+    }
+}
+.about_footer{
+    display:flex;
+    bottom:0;
+    background-color: black;
 }
 
 // MEDIA QUERYS 
