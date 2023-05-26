@@ -1,0 +1,64 @@
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: azure;
+}
+.nav1 img {
+  width: 60px;
+}
+.nav1 a {
+  text-decoration: none;
+  color: black;
+}
+.nav1 .navi {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 5px;
+}
+
+.mainnav {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.mainnav a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+footer {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer .foot {
+  align-items: center;
+}
+
+.social {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 5px;
+}
+.social img {
+  width: 50px;
+}
+
+.legals {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}/*# sourceMappingURL=styles.css.map */
