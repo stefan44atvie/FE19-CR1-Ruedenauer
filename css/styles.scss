@@ -19,18 +19,20 @@
       }
 }
 .mainnav{
-    display:flex;
-    justify-content:space-between;
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
     gap:15px;
     padding-bottom:5px;
     padding-top:5px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+justify-items:stretch;
 
     a{
         text-decoration: none;
         color:black;
         padding:5px;
+
     }
 }
 footer{
@@ -109,9 +111,55 @@ footer{
     }
 }
 
+.content{
+    .title {
+        text-decoration: none;
+        color:blue;
+        text-align: center;
+    }
+    .monthly_image{
+        width:fit-content;
+        // text-align: center;
+        margin-left:30%;
+        border:2px solid red;
+    }
+    .title2{
+        color:black;
+        text-align: center;
+    }
+    .recipe{
+        padding-left:10px;
+    }
+    .preparation{
+        text-align: left;
+        text-decoration:wavy;
+        font-weight: bold;
+    }
+    
+    .prep_text{
+        font-size:18px;
+        line-height: 1.2;
+    }
+}
+.container1{
+    display:flex;
+    background-color:aliceblue;
+
+    .cooking{
+        width:40%;
+    }
+}
+
+// MEDIA QUERYS 
+
 @media screen and (width<834px){
     .container{
         grid-template-columns:repeat(2,1fr);
+
+
+    }
+    .mainnav{
+        grid-template-columns: repeat(7,1fr);
 
     }
 }
@@ -121,4 +169,6 @@ footer{
 
     }
 }
+
+
     
