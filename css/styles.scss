@@ -35,35 +35,90 @@
 }
 footer{
     margin-top:5px;
-    display:flex;
+    margin-bottom:10px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    gap:10px;
 
-    justify-content: space-evenly;
-   
-    a{
-        text-decoration: none;
-        color:black;
-    }
-    .foot{
-        align-items:center;
-        justify-content: space-between;
-        gap:10px;   
+    .legals{
+        text-align: center  ;
     }
     
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    .foot{
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+        gap:10px; 
+        padding-top:5px;
+        padding-bottom:5px;
+        
+    }
+    img{
+        width:40px;
+    }
+    .footer1{
+        display: grid;
+    }
 }
 .social{
     align-items: center;
     display:flex;
-    gap:10px;
+    grid-template-columns: repeat(6,1fr);
     justify-content: center;
-    margin-top:5px;
-   
+    gap:40px;
+    // justify-content: center;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color: black;
     img{
         width:50px;
     }
 }
-.legals{
-    align-items: center;
-    display:flex;
-    justify-content: center;
-    margin-top:5px;
+.container{
+    // width:100%;
+    gap:5px;
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    
+    img{
+        margin-top:20px;
+        width:100%;
+    }
 }
+.food{
+    .overlay{
+        background-color: rgba(0, 0, 0, 0.5);
+        width:100%;
+        padding-bottom:5%;
+
+    }
+    .text{
+        position:relative;
+        bottom:12%;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+}
+
+@media screen and (width<834px){
+    .container{
+        grid-template-columns:repeat(2,1fr);
+
+    }
+}
+@media screen and (width<=480px){
+    .container{
+        grid-template-columns:repeat(1,1fr);
+
+    }
+}
+    
