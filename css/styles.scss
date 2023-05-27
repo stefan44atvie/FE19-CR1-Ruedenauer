@@ -11,6 +11,9 @@
         text-decoration: none;
         color:black;
     }
+    a:hover {
+        color:blue;
+    }
     .navi{
         display:flex;
         gap:20px;
@@ -26,7 +29,7 @@
     padding-top:5px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-justify-items:stretch;
+    justify-items:stretch;
 
     a{
         text-decoration: none;
@@ -34,8 +37,12 @@ justify-items:stretch;
         padding:5px;
 
     }
+    a:hover{
+        color:blue;
+    }
 }
 footer{
+    flex-shrink: 0;
     margin-top:5px;
     padding-bottom:5px;
     width:100%;
@@ -51,6 +58,9 @@ footer{
     a{
         text-decoration: none;
         color:white;
+    }
+    a:hover{
+        color:red;
     }
     .foot{
         display:flex;
@@ -122,7 +132,7 @@ footer{
         width:fit-content;
         // text-align: center;
         margin-left:30%;
-        border:2px solid red;
+        border:2px solid blue;
     }
     .title2{
         color:black;
@@ -133,21 +143,27 @@ footer{
     }
     .preparation{
         text-align: left;
-        text-decoration:wavy;
-        font-weight: bold;
+        text-decoration:none;
+        font-weight:bold;
+    }
+    .prepex{
+        text-align: left;
+        text-decoration:line-through;
+        font-weight:lighter;
+        color:blue;
     }
     
     .prep_text{
         font-size:18px;
         line-height: 1.2;
     }
-}
-.container1{
-    display:flex;
-    background-color:aliceblue;
-
-    .cooking{
-        width:40%;
+    .container1{
+        display:flex;
+        background-color:red;
+        font-weight:normal;
+        .cooking{
+            width:40%;
+        }
     }
 }
 .about{
@@ -176,11 +192,27 @@ footer{
         grid-template-columns: repeat(7,1fr);
 
     }
+    .content{
+        .container1{
+            background-color:brown;
+            .cooking{
+                width:80%;
+            }
+        }
+    }
 }
 @media screen and (width<=480px){
     .container{
         grid-template-columns:repeat(1,1fr);
 
+    }
+    .content{
+        .container1{
+            background-color:bisque;
+            .cooking{
+                width:80%;
+            }
+        }
     }
 }
 

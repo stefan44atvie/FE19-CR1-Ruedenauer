@@ -10,6 +10,9 @@
   text-decoration: none;
   color: black;
 }
+.nav1 a:hover {
+  color: blue;
+}
 .nav1 .navi {
   display: flex;
   gap: 20px;
@@ -32,8 +35,12 @@
   color: black;
   padding: 5px;
 }
+.mainnav a:hover {
+  color: blue;
+}
 
 footer {
+  flex-shrink: 0;
   margin-top: 5px;
   padding-bottom: 5px;
   width: 100%;
@@ -48,6 +55,9 @@ footer .legals {
 footer a {
   text-decoration: none;
   color: white;
+}
+footer a:hover {
+  color: red;
 }
 footer .foot {
   display: flex;
@@ -113,7 +123,7 @@ footer .footer1 {
   width: -moz-fit-content;
   width: fit-content;
   margin-left: 30%;
-  border: 2px solid red;
+  border: 2px solid blue;
 }
 .content .title2 {
   color: black;
@@ -124,20 +134,25 @@ footer .footer1 {
 }
 .content .preparation {
   text-align: left;
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
+  text-decoration: none;
   font-weight: bold;
+}
+.content .prepex {
+  text-align: left;
+  text-decoration: line-through;
+  font-weight: lighter;
+  color: blue;
 }
 .content .prep_text {
   font-size: 18px;
   line-height: 1.2;
 }
-
-.container1 {
+.content .container1 {
   display: flex;
-  background-color: aliceblue;
+  background-color: red;
+  font-weight: normal;
 }
-.container1 .cooking {
+.content .container1 .cooking {
   width: 40%;
 }
 
@@ -163,9 +178,21 @@ footer .footer1 {
   .mainnav {
     grid-template-columns: repeat(7, 1fr);
   }
+  .content .container1 {
+    background-color: brown;
+  }
+  .content .container1 .cooking {
+    width: 80%;
+  }
 }
 @media screen and (width <= 480px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .content .container1 {
+    background-color: bisque;
+  }
+  .content .container1 .cooking {
+    width: 80%;
   }
 }/*# sourceMappingURL=styles.css.map */
